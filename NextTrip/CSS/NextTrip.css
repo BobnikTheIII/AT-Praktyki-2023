@@ -13,18 +13,21 @@ header  {
     width: fit-content;
     margin: 0px;
     margin-left: 7%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
 }
 
-    #Logo-NextTrip h1   {
+    .przycisk-logo h1   {
         color: rgb(5, 34, 87);
         margin: 0px;
     }
 
-    #Logo-NextTrip h6   {
+    .przycisk-logo h2   {
         color: lightskyblue;
         font-size: medium;
         margin: 0px;
         text-align: right;
+        text-decoration: none;
     }
 
     .przycisk-logo  {
@@ -51,6 +54,8 @@ header  {
 #pas-zakladek   {
     background-color: rgb(5, 34, 87);
     width: 100%;
+    height: auto;
+    display: flex;
 }
 
     #pas-zakladek .przycisk   {
@@ -61,6 +66,7 @@ header  {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: large;
         color: white;
+        text-decoration: none;
     }
 
     #pas-zakladek #pierwszy {
@@ -68,7 +74,7 @@ header  {
     }
 
     #sociale    {
-        float: right;
+        margin-left: 50%;
         padding: 5px;
     }
         #pas-zakladek .przycisk:hover {
@@ -77,8 +83,14 @@ header  {
             cursor: pointer;
         }
 
+#Kontakt    {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
 #lewy   {
-    float: left;
+    /*float: left;*/
     margin: 0px;
     width: 50%;
     height: 13cm;
@@ -97,12 +109,12 @@ header  {
         font-family: Arial, Helvetica, sans-serif;
     }
 
-        #assistance h4  {
+        #assistance p  {
             font-weight: lighter;
         }
 
 #prawy   {
-    float: right;
+    /*float: right;*/
     width: 50%;
     height: 13cm;
 }
@@ -158,11 +170,16 @@ header  {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 
     }
-/*
-#panorama   {
-    background: linear-gradient(180deg, white, 200px);
+
+.backg-picture  {
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,1),rgba(255,255,255,0)),
+    url(../IMG/kapitanie-majtek-za-burta.png);
+    background-size: 100%;
+    
 }
-*/
+
 footer  {
     background-color: rgb(5, 34, 87);
     display: flex;
@@ -180,6 +197,7 @@ footer  {
         background-color: rgb(5, 34, 87);
         color: white;
         border: none;
+        text-decoration: none;
     }
 
     .footer-button:hover    {
